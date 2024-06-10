@@ -4,7 +4,8 @@ function Nav() {
   return (
     <nav>
       <Link to="/">홈</Link>
-      <Link to="/sub1">서브</Link>
+      <Link to="/record">기록</Link>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </nav>
   );
 }
