@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Record() {
+function DashboardPage() {
   const [recordList, setRecordList] = useState([
     {
       id: 1,
@@ -57,4 +57,4 @@ function Record() {
   );
 }
 
-export default Record;
+export default DashboardPage;

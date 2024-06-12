@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 
-function RecordDetail() {
+function RecordWorkoutPage() {
   const param = useParams();
   return <>상세페이지 {param.id}</>;
 }
 
-export default RecordDetail;
+export default RecordWorkoutPage;
