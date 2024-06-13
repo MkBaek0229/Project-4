@@ -8,6 +8,14 @@ function Sidebar() {
         <ul className="flex flex-col justify-center gap-16">
           <li>
             <NavLink
+              to="/"
+              className="block bg-white text-center p-4 rounded-lg shadow-md hover:bg-gray-200"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/dashboard"
               className="block bg-white text-center p-4 rounded-lg shadow-md hover:bg-gray-200"
             >
@@ -19,7 +27,7 @@ function Sidebar() {
               to="/record"
               className="block bg-white text-center p-4 rounded-lg shadow-md hover:bg-gray-200"
             >
-              Record Workout
+              Record
             </NavLink>
           </li>
           <li>
@@ -28,14 +36,6 @@ function Sidebar() {
               className="block bg-white text-center p-4 rounded-lg shadow-md hover:bg-gray-200"
             >
               Achievements
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/shop"
-              className="block bg-white text-center p-4 rounded-lg shadow-md hover:bg-gray-200"
-            >
-              Shop
             </NavLink>
           </li>
         </ul>
