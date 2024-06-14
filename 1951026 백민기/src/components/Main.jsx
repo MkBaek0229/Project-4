@@ -7,7 +7,7 @@ import AchievementsPage from "../pages/AchievementsPage";
 
 function Main() {
   return (
-    <main className="bg-green-500 flex-1 max-w-6xl">
+    <main className="bg-custom-winter flex-1 max-w-6xl">
       <Header />
       <article>
         <Routes>

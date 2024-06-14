@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <aside className="bg-green-500 w-40 p-4 flex-initial  h-82">
+    <aside className="bg-custom-cold w-40 p-4 flex-initial h-82">
       <nav>
         <ul className="flex flex-col justify-center gap-16">
           <li>

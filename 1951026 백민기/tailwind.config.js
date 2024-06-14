@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "custom-cold": "#E3FDFD",
+        "custom-winter": "#CBF1F5",
+      },
       fontFamily: {
         rix: ["RixInooAriDuriR", "sans-serif"],
       },

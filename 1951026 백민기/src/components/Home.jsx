@@ -3,11 +3,9 @@ import React from "react";
 function Home() {
   return (
     <div className="container mx-auto p-4">
-      <header className="text-center my-8">
-        <h1 className="text-4xl font-bold mb-4">
-          Welcome to Our Reservation Service!
-        </h1>
-        <p className="text-lg mb-4">
+      <section className="text-center">
+        <h1 className="text-4xl font-bold mb-4">환영합니다.</h1>
+        <p className="text-2xl mb-4">
           예약을 통해 원하는 시간에 맛있는 음식을 받아보세요.
         </p>
         <div className="flex justify-center space-x-4">
@@ -21,9 +19,9 @@ function Home() {
             메뉴 보기
           </a>
         </div>
-      </header>
+      </section>
 
-      <section className="my-8">
+      <section>
         <h2 className="text-3xl font-bold mb-4">추천 메뉴</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="border border-gray-300 p-4 rounded">
@@ -65,13 +63,13 @@ function Home() {
           <p className="text-lg mb-2">
             "정말 신선하고 맛있었어요! 예약 시스템도 편리하네요."
           </p>
-          <footer className="text-sm text-gray-600">- 김철수</footer>
+          <footer className="text-sm text-gray-600">- 김봉진</footer>
         </blockquote>
         <blockquote className="border-l-4 border-green-500 pl-4 mt-4">
           <p className="text-lg mb-2">
             "서비스가 훌륭해요. 자주 이용할 것 같아요."
           </p>
-          <footer className="text-sm text-gray-600">- 이영희</footer>
+          <footer className="text-sm text-gray-600">- 김범석</footer>
         </blockquote>
       </section>
     </div>
