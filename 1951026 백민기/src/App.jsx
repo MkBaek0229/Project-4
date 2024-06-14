@@ -7,8 +7,11 @@ import Main from "./components/Main";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col ">
-        <div className="container-xl mx-full md:px-8 lg:px-16 xl:px-40 flex flex-1 gap-20 py-40">
+      <div className="min-h-screen flex flex-col justify-center">
+        <div
+          className="container-xl mx-full flex justify-center
+"
+        >
           <Sidebar />
           <Main />
         </div>

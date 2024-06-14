@@ -4,12 +4,10 @@ import DashboardPage from "../pages/DashboardPage";
 import HomePage from "../pages/HomePage";
 import RecordWorkoutPage from "../pages/RecordWorkoutPage";
 import AchievementsPage from "../pages/AchievementsPage";
-import ProfilePage from "../pages/ProfilePage";
-import ShopPage from "../pages/ShopPage";
 
 function Main() {
   return (
-    <main className="bg-blue-500 flex-1">
+    <main className="bg-green-500 flex-1 max-w-6xl">
       <Header />
       <article>
         <Routes>

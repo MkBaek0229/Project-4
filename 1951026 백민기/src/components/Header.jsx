@@ -1,13 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import "../index.css"; // Tailwind CSS와 추가 스타일을 포함한 CSS 파일을 가져옵니다.
 
 function Header() {
   return (
-    <>
-      <header className="bg-blue-500 p-4 flex justify-center">
-        <h1>Fitness Tracker</h1>
-      </header>
-    </>
+    <section className="container mx-auto p-4 ">
+      <h1 className="text-white uppercase text-[42px] m-0 leading-[47px] tracking-[2px] font-rix">
+        <span className="title text-black transform translate-x-[-50%] block relative left-1/2 text-center">
+          배달 미리 예약하기
+        </span>
+      </h1>
+    </section>
   );
 }
 
