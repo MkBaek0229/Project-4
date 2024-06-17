@@ -6,7 +6,7 @@ function Header() {
     <section className="container mx-auto p-4 ">
       <h1 className="text-white uppercase text-[42px] m-0 leading-[47px] tracking-[2px] font-rix">
         <span className="title text-black transform translate-x-[-50%] block relative left-1/2 text-center">
-          음식 일기 작성하기
+          음식 섭취 기록
         </span>
       </h1>
     </section>

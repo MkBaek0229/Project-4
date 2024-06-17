@@ -6,10 +6,22 @@ function FoodModal({ setIsModalOpen, handleAddFood }) {
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
   const [calories, setCalories] = useState(0);
+  const [carbs, setCarbs] = useState(0);
+  const [protein, setProtein] = useState(0);
+  const [fat, setFat] = useState(0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    handleAddFood({ foodName, foodImage, description, category, calories });
+    handleAddFood({
+      foodName,
+      foodImage,
+      description,
+      category,
+      calories,
+      carbs,
+      protein,
+      fat,
+    });
     setIsModalOpen(false);
   };
 
@@ -61,7 +73,37 @@ function FoodModal({ setIsModalOpen, handleAddFood }) {
             <input
               type="number"
               value={calories}
-              onChange={(e) => setCalories(e.target.value)}
+              onChange={(e) => setCalories(Number(e.target.value))}
+              className="w-full px-2 py-1 border rounded"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Carbs</label>
+            <input
+              type="number"
+              value={carbs}
+              onChange={(e) => setCarbs(Number(e.target.value))}
+              className="w-full px-2 py-1 border rounded"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Protein</label>
+            <input
+              type="number"
+              value={protein}
+              onChange={(e) => setProtein(Number(e.target.value))}
+              className="w-full px-2 py-1 border rounded"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Fat</label>
+            <input
+              type="number"
+              value={fat}
+              onChange={(e) => setFat(Number(e.target.value))}
               className="w-full px-2 py-1 border rounded"
               required
             />

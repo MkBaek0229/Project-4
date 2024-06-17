@@ -20,19 +20,17 @@ function Home() {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="grid grid-cols-2 gap-4">
-        <FoodInfoWidget
-          foodName={foodName}
-          setFoodName={setFoodName}
-          foodImage={foodImage}
-          setFoodImage={setFoodImage}
-          description={description}
-          setDescription={setDescription}
-          calories={calories}
-          setCalories={setCalories}
-        />
-        <DiaryWidget entries={entries} handleAddEntry={handleAddEntry} />
-      </div>
+      <FoodInfoWidget
+        foodName={foodName}
+        setFoodName={setFoodName}
+        foodImage={foodImage}
+        setFoodImage={setFoodImage}
+        description={description}
+        setDescription={setDescription}
+        calories={calories}
+        setCalories={setCalories}
+      />
+      <DiaryWidget />
     </div>
   );
 }
